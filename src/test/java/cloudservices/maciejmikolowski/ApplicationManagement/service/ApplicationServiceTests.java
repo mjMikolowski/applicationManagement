@@ -1,6 +1,10 @@
 package cloudservices.maciejmikolowski.ApplicationManagement.service;
 
-import cloudservices.maciejmikolowski.ApplicationManagement.dto.*;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.Application;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.ApplicationHistoryPoint;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.ApplicationStateEnum;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.ApplicationWithHistory;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.SortingParams;
 import cloudservices.maciejmikolowski.ApplicationManagement.repository.ApplicationRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -25,8 +29,6 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
 public class ApplicationServiceTests {
-
-    AutoCloseable closeable;
 
     @InjectMocks
     ApplicationService applicationService;

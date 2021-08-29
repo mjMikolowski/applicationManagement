@@ -1,6 +1,10 @@
 package cloudservices.maciejmikolowski.ApplicationManagement.service;
 
-import cloudservices.maciejmikolowski.ApplicationManagement.dto.*;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.Application;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.ApplicationHistoryPoint;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.ApplicationStateEnum;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.ApplicationWithHistory;
+import cloudservices.maciejmikolowski.ApplicationManagement.dto.SortingParams;
 import cloudservices.maciejmikolowski.ApplicationManagement.repository.ApplicationRepository;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

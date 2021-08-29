@@ -18,8 +18,6 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class ApplicationHistoryPointServiceTests {
 
-    AutoCloseable closeable;
-
     @InjectMocks
     ApplicationHistoryPointService applicationHistoryPointService;
 
