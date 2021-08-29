@@ -14,7 +14,7 @@ This API is used for managing list of applications with content, name and state.
 Each action from the flow described above has separate endpoint.
 ## List of state flow action endpoints
 
-- create - POST http://localhost:8080/create
+- create - `POST` http://localhost:8080/create
 
         INPUT BODY
         { 
@@ -31,7 +31,7 @@ Each action from the flow described above has separate endpoint.
             "publishedId": null
         }
 
-- delete - PUT http://localhost:8080/delete
+- delete - `PUT` http://localhost:8080/delete
 
         INPUT BODY
         {
@@ -48,7 +48,7 @@ Each action from the flow described above has separate endpoint.
             "publishedId": null
         }
 
-- verify - PUT http://localhost:8080/verify
+- verify - `PUT` http://localhost:8080/verify
 
         REQUEST PARAM
         id=appliationDatabaseIdentifier
@@ -62,7 +62,7 @@ Each action from the flow described above has separate endpoint.
             "publishedId": null
         }
 
-- reject - PUT http://localhost:8080/reject
+- reject - `PUT` http://localhost:8080/reject
 
         INPUT BODY
         {
@@ -79,7 +79,7 @@ Each action from the flow described above has separate endpoint.
             "publishedId": null
         }
 
-- accept - PUT http://localhost:8080/accept
+- accept - `PUT` http://localhost:8080/accept
 
         REQUEST PARAM
         id=appliationDatabaseIdentifier
@@ -93,7 +93,7 @@ Each action from the flow described above has separate endpoint.
             "publishedId": null
         }
 
-- publish - PUT http://localhost:8080/publish
+- publish - `PUT` http://localhost:8080/publish
 
         REQUEST PARAM
         id=appliationDatabaseIdentifier
@@ -110,7 +110,7 @@ Each action from the flow described above has separate endpoint.
 ## Other endpoints to get information about applications
 There are another endpoints not connected with state flow but prepared for fetching data about application in database.
 
-- get all applications - GET http://localhost:8080
+- get all applications - `GET` http://localhost:8080
         
         INPUT PARAMS
         - offset=pageNumber - pagination param 
@@ -146,7 +146,7 @@ There are another endpoints not connected with state flow but prepared for fetch
             }, ...
         ]
 
-- get application with state changes history - GET http://localhost:8080/{id}
+- get application with state changes history - `GET` http://localhost:8080/{id}
        
         INPUT PATH VARIABLE
         /{id} - application database identifier
