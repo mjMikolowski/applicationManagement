@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 import lombok.Data;
 
@@ -16,7 +15,6 @@ import java.util.List;
 public class Application {
     @Id
     @GeneratedValue
-    @JsonIgnore
     private Integer id;
     private ApplicationStateEnum state;
     @NotNull
